@@ -1,4 +1,4 @@
-/* For mobile phones*/
+/* For mobile phones max-width 480px*/
 * {
   box-sizing: border-box;
 }
@@ -8,50 +8,100 @@ html, body {
   padding: 0;
 }
 
-header {
-  height: 200px;
-  background: black;
-  color: white;
+.header {
+  height: 350px;
+  background-image: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.subheader {
+  background: white;
+  height: 30px;
+  width: 90%;
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-option {
+  flex: 1;
 }
 
 .logo {
   background-image: url(http://wideopentech.com/themes/wot-2013-gm/_/img/wot-logo-whitex2.svg);
-  background-size: 150px 30px;
+  height: 30px;
+  width: 150px;
 }
+
+.menu-options {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  flex: 1;
+}
+
+.scrolling-header {
+
+}
+
 
 .topbanner {
   height: 500px;
-  background-image: url("image1.jpg");
-  background-size: 100%;
   vertical-align: middle;
 }
 
-@media (min-width: 768px) {
-  /*For desktops*/
-  * {
-    box-sizing: border-box;
-  }
+@media (min-width: 481px) and (max-width: 768px) {
 
-  html, body {
-    margin: 0;
-    padding: 0;
-  }
+}
 
+@media (min-width: 925px) {
   header {
-    height: 100px;
-    background: blue;
+    height: 525px;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 998px) {
+
+}
+
+
+@media (min-width: 933px) {
+  /*For desktops*/
+
+
+  .subheader {
+
+  }
+
+  .logo-option {
+
   }
 
   .logo {
-    font-size: 1em;
+    /*font-size: 1em;*/
+  }
+
+  .menu-options {
+    display: block;
   }
 
   .menuitem {
+    color: white;
+    list-style: none;
+  }
 
+
+  .hamburger {
+    display: none;
   }
 
   .topbanner {
-    background-image: url("image1.jpg");
+
   }
 
 }
