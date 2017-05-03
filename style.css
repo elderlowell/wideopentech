@@ -1,0 +1,57 @@
+/* For mobile phones*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 200px;
+  background: black;
+  color: white;
+}
+
+.logo {
+  background-image: url(http://wideopentech.com/themes/wot-2013-gm/_/img/wot-logo-whitex2.svg);
+  background-size: 150px 30px;
+}
+
+.topbanner {
+  height: 500px;
+  background-image: url("image1.jpg");
+  background-size: 100%;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  /*For desktops*/
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    height: 100px;
+    background: blue;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  .menuitem {
+
+  }
+
+  .topbanner {
+    background-image: url("image1.jpg");
+  }
+
+}
